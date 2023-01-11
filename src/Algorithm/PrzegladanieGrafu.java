@@ -4,16 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public abstract class PrzegladanieGrafu {
-    protected List<PrzegladanieGrafu> lista = new ArrayList<>();
-    protected int x;
-    protected int y;
-
-    public PrzegladanieGrafu(int x, int y) {
-        this.x = x;
-        this.y = y;
+    public PrzegladanieGrafu() {
     }
-
-    public abstract void wstaw(int x, int y);
+    public abstract void wstaw(Character wierzcholek);
     public abstract void pobierz();
-    public abstract void przegladaj();
+    public abstract void przegladaj(List<Wierzcholek> graf, String wierzcholki, Character wierzcholekPoczatkowy);
 }
